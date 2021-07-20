@@ -1,24 +1,35 @@
-# tokumei-chat
+## NoName SNS
 
-## Project setup
-```
-npm install
-```
+仮名称　N'2
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+ユーザー登録を省くことで誰でも簡単に扱えるSNSという特性と
 
-### Compiles and minifies for production
-```
-npm run build
-```
+めんどくさい処理を描かなくていいという開発側の都合を融合させたSNS
 
-### Lints and fixes files
-```
-npm run lint
-```
+-> 今後SNS作るための土台兼道楽
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## できること
+
+- Twitterのようにつぶやきを投稿
+- つぶやきを閲覧
+
+## できないこと
+- いいね/RT/削除
+- ユーザー登録
+- 投稿者の名前づけ
+- どの投稿が自分のものかの判断
+
+## 技術
+### フロント
+Vue.js
+
+vue-routingまだ勉強中なのでSPA
+
+### バック
+Express
+
+DBはmongoDB
+
+
+
+
