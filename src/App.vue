@@ -1,15 +1,36 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+
+    <textarea v-model="text"/>
+    <button type="button" @click="post_tweet">投稿</button>
+    <Api ref="api"/>
+
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import Api from "./components/Api";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Api
+  }, data() {
+    return {
+      text: null
+    }
+  },
+  mounted() {
+    this.show_tweet()
+  },
+  methods: {
+    show_tweet() {
+      this.$refs.api.show_tweet()
+    },
+    post_tweet() {
+      this.$refs.api.post_tweet(this.text)
+    }
   }
 }
 </script>
