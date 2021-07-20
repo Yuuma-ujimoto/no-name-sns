@@ -1,12 +1,16 @@
 <template>
   <div class="post-box">
-
+    <p>{{text}}</p>
   </div>
 </template>
 
 <script>
 export default {
-  name: "Post"
+  name: "Post",
+  props:{
+    text:String,
+    created_at:Date
+  }
 }
 </script>
 
